@@ -1,0 +1,55 @@
+{
+  "conf_id": "sanilhac",
+  "sanilhac": {
+    "coordinates" : {
+      "lat" : "43.95809377687287",
+      "long" : "4.429087084657054"
+    },
+    "mongo": {
+      "url": "mongodb://localhost:27017/",
+      "db": "gysma"
+    },
+    "mqtt": {
+      "url": "mqtt://10.0.0.31:1883",
+      "params": {
+        "clientId": "mqttjs_",
+        "username": "mqttadmin",
+        "password": "444NFGL8",
+        "clean": true
+      },
+      "options": {
+        "qos": 1,
+        "retain": false
+      }
+    },
+    "z2m_state_topics_exclusion_list": [
+      "^zigbee2mqtt/bridge/",
+      "/availability$",
+      "/set$"
+    ],
+    "z2m_state_topics_inclusion_list": [
+      "regex topic1",
+      "regex topic2",
+      "regex topicn"
+    ]
+  },
+  "cavaillon": {
+    "mongo": {
+      "url": "mongodb://localhost:27017/",
+      "db": "gysma"
+    },
+    "mqtt": {
+      "url": "mqtt://localhost:1883",
+      "params": {
+        "clientId": "mqttjs_",
+        "username": "mqttadmin",
+        "password": "444NFGL8",
+        "clean": true
+      },
+      "options": {
+        "qos": 1,
+        "retain": false
+      }
+    }
+  }
+}
